@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+    box-sizing: border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #090015 url("../images/headerbg.png") no-repeat top center;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+header .pr-top {
+    padding: 1.25rem 3.125rem;
+}
+
+header .pr-top .tagline {
+    font-size: 1.125rem;
+    font-weight: medium;
+    color: #fff;
+    margin-left: 2.5rem;
+}
+
+header aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header aside h1 {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5.625rem;
+}
+
+header aside h1 span {
+    display: inline-block;
+    white-space: nowrap;
+    background: url("../images/h1bg.png") no-repeat center center;
+    color: #141414;
+    background-size: contain;
+    padding: 0.625rem 0.9375rem 0.625rem 1.25rem;
+    margin-left: -1.25rem;
+}
+
+header aside h2 {
+    font-size: 1.5625rem;
+    font-weight: regular;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+header aside h3 {
+    background: rgba(9, 0, 21, 0.5);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    padding: 1.25rem 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 9.375rem;
+    position: relative;
+}
+
+header aside h3:before {
+    left: -150px;
+    transform: scale(-1, 1);
+}
+
+header aside h3:after,
+header aside h3:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    right: -150px;
+    background: url("../images/arrow.png") no-repeat center center;
+}
+
+header aside img {
+    margin-right: 0.9375rem;
+}
+
+header .pr-menu {
+    padding-top: 2.5rem;
+    border-top: 1px solid #4e4c49;
+}
+
+header .pr-menu .nav-link {
+    color: #fff;
+    font-size: 1.0625rem;
+    font-family: inherit;
+    padding-left: 0.9375rem !important;
+    padding-right: 0.9375rem !important;
+    white-space: nowrap;
+}
+
+header .pr-menu .nav-link:hover {
+    opacity: 0.7;
+}
+
+.pricesec {
+    max-width: 1130px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.pricesec article {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricesec article .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b0040;
+    border-radius: 10px;
+    margin: 0.625rem;
+    padding: 0.625rem 2.8125rem 0rem 2.1875rem;
+}
+
+.pricesec article .header div h1 {
+    font-size: 5rem;
+    color: #fa2260;
+    margin: 0rem;
+    text-transform: uppercase;
+}
+
+.pricesec article .header div h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.pricesec article .header div:nth-child(2) {
+    margin-right: auto;
+    padding-left: 3.75rem;
+}
+
+@media (max-width: 769px) {
+    .pricesec article aside {
+        overflow-x: scroll;
+    }
+}
+
+.pricesec article aside table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pricesec article aside table thead tr th {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 3.125rem;
+    text-align: center;
+}
+
+.pricesec article aside table thead tr th span {
+    display: block;
+    font-family: inherit;
+}
+
+.pricesec article aside table thead tr th span.bgyellow {
+    font-size: 1.75rem;
+    font-weight: bold;
+    background: url("../images/tier.svg") no-repeat center center;
+    color: #141414;
+    display: inline-block;
+    padding: 1.25rem 1.875rem;
+    position: relative;
+}
+
+.pricesec article aside table thead tr th span.packagename {
+    font-size: 1.125rem;
+    font-weight: medium;
+    color: #999999;
+    margin: 0.625rem 0rem;
+}
+
+.pricesec article aside table thead tr th span.packagemonth {
+    font-size: 1.5625rem;
+    font-weight: bold;
+    color: #141414;
+}
+
+.pricesec article aside table tbody tr td {
+    font-size: 1.125rem;
+    font-family: inherit;
+    padding: 1.25rem 0rem;
+}
+
+.pricesec article aside table tbody tr td button {
+    background-image: linear-gradient(to right, #e41c3c, #fc2364);
+    border: none;
+    font-size: 0.875rem;
+    font-family: inherit;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.9375rem 1.875rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.pricesec article aside table tbody tr td button:hover {
+    transform: scale(1.1);
+}
+
+.pricesec article aside table tbody tr td:first-child {
+    padding-left: 2.5rem;
+    border-right: 1px solid #e8e0f4;
+}
+
+.pricesec article aside table tbody tr td:nth-last-child(-n+3) {
+    text-align: center;
+    min-width: 16.25rem;
+}
+
+.pricesec article aside table tbody tr td:nth-child(3n) {
+    background-color: #240f40;
+    color: #fff;
+}
+
+.pricesec article aside table tbody tr:first-child td {
+    border-top: 1px solid #e8e0f4;
+    padding-top: 2.5rem;
+}
+
+.pricesec article aside table tbody tr:last-child td {
+    padding-bottom: 2.5rem;
+}
+
+.pricesec article aside table tfoot {
+    background: #ffff00;
+}
+
+.pricesec article aside table tfoot tr td {
+    font-size: 1.375rem;
+    font-family: inherit;
+    color: #090015;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 3.125rem 0rem;
+}
+
+.pricesec article aside table tfoot tr td:nth-last-child(-n+3) {
+    text-align: center;
+}
+
+.pricesec article aside table tfoot tr td:first-child {
+    padding-left: 2.5rem;
+    border-bottom-left-radius: 0.625rem;
+}
+
+.pricesec article aside table tfoot tr td:last-child {
+    border-bottom-right-radius: 0.625rem;
+}
+
+.recommended {
+    position: relative;
+}
+
+.recommended:before {
+    position: absolute;
+    content: "RECOMMENDED";
+    background: url("../images/recommend.svg") no-repeat center center;
+    background-size: contain;
+    padding: 0.625rem 1.25rem;
+    color: #ffff00;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    top: calc(-50%+1.3125rem);
+    left: 50px;
+}
+
+.loginarea a {
+    text-decoration: none;
+}
+
+.loginarea a.signin {
+    background: url("../images/user.png") no-repeat 0px 0px;
+    font-size: 1.125rem;
+    color: #fff;
+    padding: 0rem 1.875rem;
+}
+
+.loginarea a.signin:hover {
+    opacity: 0.7;
+}
+
+.pr-btn {
+    background-image: linear-gradient(to right, #e41c3c, #fc2364);
+    border: none;
+    font-size: 0.875rem;
+    font-family: inherit;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.9375rem 1.875rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.pr-btn:hover {
+    background-image: linear-gradient(top bottom, #e41c3c, #fc2364);
+    color: #fff;
+    opacity: 0.7;
+}
+
+.m-top {
+    margin-top: 3.75rem;
+}
+
+.m-bottom {
+    margin-bottom: 3.75rem;
+}
+
+.p-right-0 {
+    padding-right: 0rem !important;
+}
+
+.p-left-0 {
+    padding-left: 0rem !important;
+}
+
+.p-top-102 {
+    padding-top: 6.375rem !important;
+}
+
+.p-left-30 {
+    padding-left: 1.875rem !important;
+}
+
+.p-left-25 {
+    padding-left: 1.5625rem !important;
+}
+
+.p-left-20 {
+    padding-left: 1.25rem !important;
+}
+
+.p-left-15 {
+    padding-left: 0.9375rem !important;
+}
+
+.p-left-10 {
+    padding-left: 0.625rem !important;
+}
